@@ -25,10 +25,10 @@
         justify-content: center;
         flex-direction: column;
       }
-      p:first-child{
+      p#page_title{
         font-size: 2.5em;
       }
-      p:last-child{
+      p#download_msg{
         font-size: 12px;
         margin-top: 15px;
       }     
@@ -36,8 +36,9 @@
 </head>
 <body onload="downloadApk()">
   <img src="roullete_img.webp" alt="image" style="height: 60px; width: 60px;"/>
-  <p>Spin Earn</p>
-  <p>downloading...</p>
+   </br>
+  <p id="page_title">Spin Earn</p>
+  <p id="download_msg">downloading...</p>
 
  <script>
     function downloadApk(){
